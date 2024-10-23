@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home Dashboard</title>
+    <!-- Google Fonts for sleek typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Smart Home Dashboard</h1>
-    <div id="data">
-        <h2>Temperature: <span id="temperature"></span> °C</h2>
-        <h2>Humidity: <span id="humidity"></span> %</h2>
-        <h2>Light: <span id="light"></span> lux</h2>
+    <div class="container">
+        <header>
+            <h1>Smart Home Dashboard</h1>
+        </header>
+        <main>
+            <div class="sensor-data">
+                <div class="data-card">
+                    <h2>Temperature</h2>
+                    <p><span id="temperature"></span> °C</p>
+                </div>
+                <div class="data-card">
+                    <h2>Humidity</h2>
+                    <p><span id="humidity"></span> %</p>
+                </div>
+                <div class="data-card">
+                    <h2>Light</h2>
+                    <p><span id="light"></span> lux</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Smart Home Dashboard &copy; 2024</p>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text for contrast */
+}
+
+/* Main container for central alignment */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #1E1E1E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #00E676; /* Sleek green accent */
+    font-weight: 500;
+}
+
+/* Main section styling */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sensor-data {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.data-card {
+    background-color: #1E1E1E;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.data-card:hover {
+    transform: translateY(-5px); /* Sleek hover effect */
+}
+
+.data-card h2 {
+    margin: 0;
+    color: #00E676;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.data-card p {
+    font-size: 2rem;
+    margin: 0;
+    color: #E0E0E0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1E1E1E;
+    color: #B0B0B0;
+    font-size: 0.9rem;
+}
