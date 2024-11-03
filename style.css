@@ -1,44 +1,51 @@
-* {
-    box-sizing: border-box;
-}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef; /* Light grey background */
+    color: #343a40; /* Dark grey text */
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    padding: 20px;
 }
 
-header {
-    background: #35424a;
-    color: white;
-    padding: 10px 0;
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
     text-align: center;
+    color: #007bff; /* Blue color for the title */
+    margin-bottom: 20px;
 }
 
-main {
+.card {
+    background-color: #f8f9fa; /* Light card background */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners for cards */
     padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.data-section {
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 20px;
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }
 
 h2 {
-    color: #35424a;
+    margin: 0 0 10px 0;
+    font-weight: 700; /* Bold font for headings */
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+p {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 400; /* Normal weight for paragraph text */
 }
+
