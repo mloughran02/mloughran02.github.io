@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Smart Home Dashboard</h1>
-        <div class="data-display">
-            <p>Temperature: <span id="temperature">Loading...</span>°C</p>
-            <p>Humidity: <span id="humidity">Loading...</span>%</p>
-            <p>Light Level: <span id="light">Loading...</span> lux</p>
-        </div>
-    </div>
+    </header>
+    <main>
+        <section class="data-section">
+            <h2>Temperature</h2>
+            <div id="temperature">Loading...</div>
+        </section>
+        <section class="data-section">
+            <h2>Humidity</h2>
+            <div id="humidity">Loading...</div>
+        </section>
+        <section class="data-section">
+            <h2>Light Level</h2>
+            <div id="light">Loading...</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Smart Home Project</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
